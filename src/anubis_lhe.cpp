@@ -145,12 +145,8 @@ int main(int argn, char** argv){
   
   // Normalise histograms
   for (int i =0; i < cos_n; ++i){
-    if ( cos_min + i*cos_step  <= cos_val && cos_val < cos_min + (i+1)*cos_step ){
-      cos_vals[i] = cos_vals[i]/event_number;
-    }
-    if ( inv_min + i*inv_step  <= inv_val && inv_val < inv_min + (i+1)*inv_step ){
-      inv_vals[i] = inv_vals[i]/event_number;
-    }
+    cos_vals[i] = cos_vals[i]/event_number;
+    inv_vals[i] = inv_vals[i]/event_number;
   }
 
   // ***** Output ***** 
